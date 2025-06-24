@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Starter Kit (Atomic + Tailwind + React Query + shadcn)
 
-## Getting Started
+A production-ready starter kit that helps you build clean, scalable web apps fast.
 
-First, run the development server:
+## 📦 Tech Stack
+- ✅ Next.js (App Router)
+- 🎨 Tailwind CSS + shadcn/ui
+- ⚛️ React Query for data fetching
+- 🧱 Atomic design pattern (atoms → organisms)
 
+## 🗂️ Folder Structure Highlights
+- `components/` → atomic UI (atoms, molecules, organisms)
+- `lib/api/` → React Query hooks for data fetching
+- `hooks/` → custom utilities like useAuth, useTimezone
+- `providers/` → app-level providers (e.g., QueryClientProvider)
+- `types/` → reusable TypeScript types
+
+## 🚀 Getting Started
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 ENV Setup
+Create a `.env.local` file:
+```env
+NEXT_PUBLIC_API_URL=http://localhost:3000/api
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ☁️ Deploy on Vercel
+This kit works great with Vercel:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Push your code to GitHub
+2. Go to https://vercel.com/new
+3. Import your GitHub repo
+4. Set your `.env` vars (like `NEXT_PUBLIC_API_URL`)
+5. Click "Deploy"
 
-## Learn More
+That’s it. You get production hosting with preview deployments by default.
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Clone This Template
+```bash
+git clone https://github.com/yourusername/nextjs-starter-kit.git
+cd nextjs-starter-kit
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✅ To-Do
+- [ ] Add authentication (Clerk or NextAuth)
+- [ ] Customize branding
+- [ ] Replace dummy pages/components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to fork or use as your foundation for client work, SaaS apps, admin panels, and more!
